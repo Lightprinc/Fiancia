@@ -361,4 +361,4 @@ def guardar_datos_csv(nombre_archivo, cantidad):
 
 
 
-guardar_datos_csv("Fiancia(Creacion)/dataset1.csv", 1500)
+guardar_datos_csv("dataset1.csv", 1500)

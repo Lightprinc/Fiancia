@@ -6,7 +6,7 @@ acum3 = 0
 acum4 = 0
 acum5 = 0
 
-datos = pd.read_csv("Fiancia(Creacion)/dataset1.csv")
+datos = pd.read_csv("IAFLASK\Fiancia(Formacion)\Fiancia(Creacion)\dataset1.csv")
 
 gastos_necesarios = ["Gasto_viveres","Gasto_renta", "Gasto_electricidad", "Gasto_agua"]
 gastos_subimportantes = ["Gasto_transporte", "Gasto_educacion", "Gasto_equipamiento_mantenimiento_hogar", "Gasto_gas"]
@@ -190,7 +190,7 @@ for i, fila in datos.iterrows():
     Start(fila)
 
 fn_resultado = pd.DataFrame(resultados) #Convierte a "fn_resultado", en un 
-fn_resultado.to_csv("Fiancia(Receptor)/resultado_analisis.csv", index=False)
+fn_resultado.to_csv("resultado_analisis.csv", index=False)
 
 
 print("1:", str(acum1), "2:", str(acum2), "3:", str(acum3), "4:", str(acum4), "5:", str(acum5))
