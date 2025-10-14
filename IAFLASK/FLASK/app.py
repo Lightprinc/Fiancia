@@ -328,5 +328,6 @@ def ver_datos(id_usuario): #Funcion para ver todos los datos pertenecientes a un
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-    crear_grafico()
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=5000)
+  
