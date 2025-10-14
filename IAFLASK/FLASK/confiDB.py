@@ -6,5 +6,5 @@ def connectionBD():
     host="localhost",
     user="root", # Cambia por tu usuario de MySQL
     password="", 
-    database="fullwallet"
+    database="android_mysql"
 )

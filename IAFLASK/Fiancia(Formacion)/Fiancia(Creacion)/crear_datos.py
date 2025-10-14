@@ -297,8 +297,6 @@ def codigo_4():
         Gasto_ocio, Gasto_aficcion, gastos_indefinidos, deudas, suscripciones, pagos_tarjeta
     ]
 
-
-
 def codigo_5():
     Ingreso_mensual = random.randint(1000, 1200)  # Min 600 MAX 800  dif 0.75
 
