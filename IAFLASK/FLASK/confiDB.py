@@ -1,10 +1,11 @@
-import mysql.connector 
+import mysql.connector
+import os
 
-# Función para conectar a la base de datos
 def connectionBD():
-    return mysql.connector.connect(
-    host="localhost",
-    user="root", # Cambia por tu usuario de MySQL
-    password="", 
-    database="android_mysql"
-)
+    conn = mysql.connector.connect(
+    host=os.environ.get("DB_HOST"),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASSWORD"),
+    database=os.environ.get("DB_NAME")
+    )
+    return conn
