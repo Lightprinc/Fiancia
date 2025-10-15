@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from confiDB import connectionBD
+from .confiDB import connectionBD
 
 import joblib
 modelo = joblib.load("IAFLASK/modelo_finanzas.pkl")
